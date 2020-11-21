@@ -60,17 +60,17 @@ I decided to make the architecture is simple and try to play with the hyperparam
 CNN Architecture:
 
 
-Net( (conv1): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	(conv1): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
 
- 	 (conv2): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
-
-     (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
-
-	 (fc1): Linear(in_features=100352, out_features=500, bias=True)
-
-	 (fc2): Linear(in_features=500, out_features=133, bias=True)
-
-	 (dropout): Dropout(p=0.2, inplace=False) )
+	(conv2): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+	
+	(pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+	
+	(fc1): Linear(in_features=100352, out_features=500, bias=True)
+	
+	(fc2): Linear(in_features=500, out_features=133, bias=True)
+	
+	(dropout): Dropout(p=0.2, inplace=False)
 
 
 The Final Test Loss = 3.81 and Test Accuracy =  16%
